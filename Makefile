@@ -43,14 +43,17 @@ build/%.o: src/%.cpp
 	@echo "project built..!"
 
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -rf build
 	@echo
 	@echo "project clean..!"
 
 copy: $(TARGET)
 	cp lib/SFML-2.5.1/bin/*.dll build
+	@cp -rf assets/image build
+	@cp -rf assets/font build
+	@cp -rf assets/audio build
 	@echo
-	@echo "SFML DLLs copied..!"
+	@echo "Supported file copied..!"
 
 run: $(TARGET)
 	cd build && ./$(PROJECT_NAME)
