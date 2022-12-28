@@ -13,6 +13,7 @@ TARGET = build/$(PROJECT_NAME)
 .PHONY: all clean copy run
 
 all:	
+	rm -f build/*.o build/*.exe
 	@echo "			Creating build directory..."
 	mkdir -p build
 	@echo "------------------------------------------------------------------"
