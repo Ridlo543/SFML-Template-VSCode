@@ -17,7 +17,7 @@ int main()
 
   // Membuat teks dan mengatur font
   sf::Font font;
-  if (!font.loadFromFile("../assets/fonts/DCC.otf"))
+  if (!font.loadFromFile("../assets/font/DCC.otf"))
   {
     std::cerr << "Error loading font" << std::endl;
     return 1;
