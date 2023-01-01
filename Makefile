@@ -52,9 +52,7 @@ clean:
 
 copy: $(TARGET)
 	cp lib/SFML-2.5.1/bin/*.dll build
-	cp -rf assets/image build
-	cp -rf assets/font build
-	cp -rf assets/audio build
+	cp -rf src/assets Build
 	@echo
 	@echo "Supported file copied..!"
 
